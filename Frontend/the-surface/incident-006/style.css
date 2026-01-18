@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Compacta BT;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 3vw 8vw;
+  background-color: #300608;
+  text-align: center;
+
+  background-image: url(./assets/bg\ \(2\).jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+#main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(4px);
+  transform: scale(1.1); /* prevents blur edges */
+  z-index: 1;
+}
+#main h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 4vw;
+  color: #fff;
+  padding-bottom: 4vw;
+  letter-spacing: 0.1vw;
+  font-weight: 400;
+}
+#main h1 > span {
+  color: #000;
+  background-color: #8d0a17;
+  padding: 0.5vw;
+}
+#cards {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: nowrap;
+}
+.card {
+  width: 6vw;
+  height: 25vw;
+  border-radius: 3vw;
+  box-shadow: 5px 5px 20px black;
+  /* background-color: blueviolet; */
+  transition: all ease 1s;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover body {
+  perspective: 100px;
+}
+.card:hover {
+  width: 20vw;
+  border-radius: 3vw;
+}
+
+.card .bottom {
+  transition: all ease 1.5s;
+  height: 5vw;
+  width: 100%;
+  background: linear-gradient(transparent, #3b0104);
+  position: absolute;
+  bottom: -20%;
+  text-align: center;
+}
+.card:hover .bottom {
+  bottom: 0%;
+}
+.card .bottom p {
+  position: absolute;
+  bottom: 20%;
+  left: -50%;
+  color: #c40216;
+  font-size: 2vw;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  opacity: 0;
+  transition: all ease 1s;
+}
+.card .bottom i {
+  position: absolute;
+  bottom: 25%;
+  right: -50%;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 300;
+  margin-bottom: 0.3vw;
+  opacity: 0;
+  transition: all ease 1s;
+}
+.card:hover p {
+  left: 10%;
+  opacity: 1;
+}
+
+.card:hover i {
+  right: 15%;
+  opacity: 1;
+}
+
+#card1 {
+  background-image: url(https://i.pinimg.com/736x/4e/7b/21/4e7b218d0fa574760d50af5cc7ac7296.jpg);
+  background-size: cover;
+  background-position: top;
+}
+#card2 {
+  background-image: url(https://i.pinimg.com/736x/51/64/76/5164761d246de0d065e647efac3c193d.jpg);
+  background-size: cover;
+  background-position: top;
+}
+#card3 {
+  background-image: url(https://i.pinimg.com/736x/a8/13/11/a813118fbc3fc78268023444b8255f42.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+#card4 {
+  background-image: url(https://i.pinimg.com/736x/6f/06/c9/6f06c9abc9a860aadbef179cb520b32f.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+#card5 {
+  background-image: url(https://i.pinimg.com/1200x/ba/e9/ee/bae9eeb4cf8e7ae20bf777dca0c51db1.jpg);
+  background-size: cover;
+  background-position: top;
+}
+#card6 {
+  background-image: url(https://i.pinimg.com/736x/4d/7a/4b/4d7a4be8ec733f0beaf58c8d67dab05b.jpg);
+  background-size: cover;
+  background-position: top;
+}
+#card7 {
+  background-image: url(https://i.pinimg.com/736x/62/47/4d/62474d0e9f270fdd52fcd23f701ad907.jpg);
+  background-size: cover;
+  background-position: top;
+}
+#card8 {
+  background-image: url(https://i.pinimg.com/736x/a2/43/99/a24399e017a2bddf8302a5eb091fa150.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+#card9 {
+  background-image: url(https://i.pinimg.com/736x/c1/c0/a6/c1c0a6ec2ba73e38b296b1d1d5c13956.jpg);
+  background-size: cover;
+  background-position: top;
+}
+#card10 {
+  background-image: url(https://i.pinimg.com/736x/2b/99/a2/2b99a216f2a4d46c6da2bfc790cad4cc.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+#last {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 1.5vw;
+  font-family: "helvetica";
+  margin-top: 1vw;
+  text-transform: uppercase;
+}
+#last span {
+  font-size: 1.8vw;
+  color: #8d0a17;
+}
+.logo {
+  width: auto;
+  height: 3vw;
+  position: absolute;
+  z-index: 2;
+  top: 2%;
+}
+#img1 {
+  left: 2%;
+}
+#img2 {
+  right: 5%;
+}
