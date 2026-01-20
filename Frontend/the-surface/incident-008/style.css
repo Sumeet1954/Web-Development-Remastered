@@ -1,10 +1,135 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/Poppins-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Poppins;
 }
 html,
 body {
   width: 100%;
   height: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(188, 221, 22); */
+}
+#nav {
+  width: 100%;
+  height: 60px;
+  /* background-color: tomato; */
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+#elem {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+#nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#nav-right h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+#nav-right h4 span {
+  color: rgb(197, 196, 196);
+}
+
+#nav-sec {
+  width: 100%;
+  height: 50px;
+  /* background-color: yellow; */
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding-left: 50px;
+}
+#nav-sec h4 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#content {
+  width: 100%;
+  height: 35%;
+  /* background-color: rosybrown; */
+  display: flex;
+  overflow-x: auto;
+}
+.cnt {
+  width: 60%;
+  /* background-color: red; */
+  padding: 20px;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+#cnt-top {
+  justify-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  padding-left: 15%;
+}
+#cnt-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12%;
+}
+#cnt-main h1 {
+  font-size: 9vw;
+  font-weight: 300;
+  line-height: 80px;
+  letter-spacing: -10px;
+}
+#content::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+}
+#content::-webkit-scrollbar-thumb {
+  background-color: orangered;
+}
+
+#image-content {
+  width: 100%;
+  height: 50vh;
+  background-color: yellow;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.cnt-img {
+  width: 100%;
+  height: 110%;
+  flex-shrink: 0;
+}
+.cnt-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#image-content::-webkit-scrollbar {
+  display: none;
 }
