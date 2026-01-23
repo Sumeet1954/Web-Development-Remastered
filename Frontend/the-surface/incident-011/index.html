@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothy - React Template</title>
+    <link rel="icon" href="assets/letter-z.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <header class="nav-bar">
+        <div class="logo">
+            <img src="assets/logo.svg" alt="logo">
+        </div>
+        <div class="nav-btn">
+            <a href="#" id="abt">About</a>
+            <a href="#" id="msn">Mission</a>
+            <a href="#" id="pdt">Product</a>
+            <button onclick="scrollToSection()">Contact</button>
+        </div>
+    </header></div>
+
+    <section>
+    <div class="container">
+  <div class="row">
+    <div class="col-5"><h6>
+        Landing page template for developers & startups</h6>
+        <p>
+            Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.
+        </p>
+        <button type="button" class="btn btn-outline-danger btn-lg" style="color:white; background-color: #182189; border: none; border-radius: none">Explore</button>
+        <button type="button" class="btn btn-outline-danger btn-lg" style="color:#182189; border: none ; border-radius: none">Learn More</button>
+    </div>
+    <div class="col-5"><img src="assets/developer.svg" alt="developer" width="100%" height="100%"></div>
+    </div>
+</div>
+    </section>
+
+    <section>
+        <div class="container" >
+            <div class="row" style=" text-align: center;">
+                <div class="col-md-6 offset-md-3">
+                    <h6>Introduce your product quickly & effectively</h6>
+                    <p>Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.</p>
+                     <button type="button" class="btn btn-outline-danger btn-lg" style="color:white; background-color: #182189; border: none; border-radius: none">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" id="About">
+            <div class="row">
+                <div class="col-5">
+                    <img src="assets/graphs.svg" alt="img" style="margin-top: 30%;">
+                </div>
+                <div class="col-5">
+                    <h6>
+                        Light, fast & responsive
+                    </h6>
+                    <p>
+                        This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.
+                    </p>
+                    <div class="row" style="padding: 0 30px">
+                        <div class="col-5">
+                            <img src="assets/notes.svg" style="height: 60px; width: 60px;">
+                            <p style="font-size: 13px;">Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.</p>
+                        </div>
+                        <div class="col-5">
+                            <img src="assets/notes.svg" style="height: 60px; width: 60px;">
+                            <p style="font-size: 13px;">Styled Components gives you total control over your components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" id="Mission">
+            <div class="row">
+            <div class="col-5">
+                <h6>Ready made sections</h6>
+                <p>Landy comes with a set of ready to use sections to help you easily create a landing page for your own brand, with all the content your startup desires. In order to replace any dummy elements (text, image, etc..) all you need to do is go to content folder and input your real content.</p>
+            </div>
+            <div class="col-5">
+                <img src="assets/product-launch.svg" alt="img">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" id="Product">
+            <div class="row">
+                <div class="col-5">
+                    <img src="assets/waving.svg" alt="wave">
+                </div>
+                <div class="col-5">
+                    <h6>That's about me</h6>
+                    <p>If you are familiar with React, or SPA frameworks in general, there shouldn't be any confusing parts about this template. if not, you can always reach out to me and I'll try me best to answer your questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" id="Contact">
+            <div class="row">
+                <div class="col-5">
+                    <h6>Contact form</h6>
+                    <p>The following form demonstrates form validation in action. Contact form component reduces the amount of time it is being re-rendered by the user as it embraces uncontrolled form validation to reduce any unnecessary performance penalty.</p>
+                </div>
+                <div class="col-5">
+                    <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+                        </div>
+                    <div class="mb-3">
+                         <label for="formGroupExampleInput2" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Email">
+                        </div>
+                    <div class="mb-3">
+                         <label for="formGroupExampleInput2" class="form-label">Message</label>
+                        <input type="textarea" class="form-control" id="formGroupExampleInput2" placeholder="Message">
+                    </div>
+                    <button type="button" class="btn btn-outline-danger btn-lg" style="color:white; background-color: #182189; border: none; border-radius: none ; ">Submit</button>       
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #F1F2F3; width: 100%;">
+        <div class="container">
+  <div class="row" >
+    <div class="col text-align-start">
+      <h4>Contact</h4>
+      <a href="#" >Tell us Everything</a>
+      <div>Do you have any question? Feel free to reach out.</div>
+      <p style="font-size: 21px; text-decoration: underline;">Let's Chat</p>
+    </div>
+    <div class="col order-1">
+      <h4>Policy</h4>
+      <ul style="list-style: none;">
+        <li><a href="#">Application Security</a></li>
+        <li><a href="#">Software principles</a></li>
+        </ul>
+    </div>
+    <div class="col order-5">
+        <ul style="list-style: none;">
+        <li><a href="#">Support Center</a></li>
+        <li><a href="#">Customer Support</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+     <div class="container" >
+  <div class="row">
+    <div class="col text-align-start">
+      <h4>Address</h4>
+      <div>Rancho Santa Margarita</div>
+      <div>2131 Elk Street</div>
+      <div>California</div>
+    </div>
+    <div class="col order-1">
+      <h4>Company</h4>
+      <ul style="list-style: none;">
+        <li><a href="#"> About</a></li>
+        <li><a href="#"> Blog </a></li>
+        <li><a href="#"> Press</a></li>
+        <li><a href="#"> Career and Culture</a></li>
+        </ul>
+    </div>
+    <div class="col order-5">
+        <h4 style="margin: 0 0 32px;">Language</h4>
+       <a>
+        <img src="assets/united-states.svg" style="height: 33px; width: 33px; margin: 2px;">
+        <img src="assets/spain.svg" style="height: 33px; width: 33px;   ">
+       </a>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    <footer style=" padding: 0 0 32px; background-color: #F1F2F3; width: 100%">
+        <div class="container" style ="padding: 0 0 32px;">
+    <header class="nav-bar" style="padding: 48px 0 0;">
+        <div class="logo">
+            <img src="assets/logo.svg" alt="logo" ">
+        </div>
+        <div class="nav-btn">
+            <a href="#"><img src="assets/github.svg" style="height: 25px ;width: 25px;"></a>
+            <a href="#"><img src="assets/twitter.svg" style="height: 25px ;width: 25px;"></a>
+            <a href="#"><img src="assets/linkedin.svg" style="height: 25px ; width:25px;"></a>
+             <a href="#"><img src="assets/medium.svg" style="height: 25px ; width:25px;"></a>
+            <a href="#"><img src="assets/kofi3.webp" style="height: 36px ; width: 143px;"></a>
+        </div>
+    </header></div>
+    </footer>
+  
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</html>
