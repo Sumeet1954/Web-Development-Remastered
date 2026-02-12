@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h2 {
+  font-family: monospace;
+  font-size: 3rem;
+  -webkit-text-stroke: 2px #919691;
+}
+.piano {
+  width: 826px;
+  height: 280px;
+  border: 8px solid #3b3b3b;
+  border-radius: 20px;
+  background-color: rgb(212, 208, 208);
+  resize: none;
+  min-width: 0;
+  box-shadow: -1px 13px 18px 10px #000;
+  position: relative;
+}
+.piano button:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+.piano button:nth-child(18) {
+  border-top-right-radius: 10px;
+}
+.wt-btn {
+  width: 45px;
+  padding-top: 28%;
+  padding-bottom: 4%;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 4px 1px #8f8f8f;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition:
+    background-color 0.05s ease,
+    box-shadow 0.05s ease,
+    transform 0.05s ease;
+  cursor: pointer;
+}
+.wt-btn:active {
+  scale: 0.97;
+  background-color: #e6e0e0;
+}
+.active {
+  scale: 0.97;
+  background-color: #e6e0e0;
+}
+
+.bl-btn {
+  width: 30px;
+  height: 160px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  border: none;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0px 4px 1px #333;
+  transition:
+    background-color 0.05s ease,
+    box-shadow 0.05s ease,
+    transform 0.05s ease;
+}
+
+.bl-btn:active,
+.bl-btn.active {
+  transform: scale(0.97);
+  background-color: #333;
+}
