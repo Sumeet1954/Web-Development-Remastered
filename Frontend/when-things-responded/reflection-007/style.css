@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+section {
+  width: 400px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  scroll-snap-type: y mandatory;
+  padding: 2rem 0;
+  margin: auto;
+}
+.all-reels {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.all-reels::-webkit-scrollbar {
+  display: none;
+}
+
+.reel {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  overflow: hidden;
+}
+.reel video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  right: 10px;
+  bottom: 20%;
+}
+.content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.content p {
+  color: #ffffffe8;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+.content i {
+  color: #ffffffe0;
+  padding: 0.5rem 0.6rem;
+  font-size: 1.7rem;
+  background-color: rgba(48, 47, 47, 0.577);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.channel-details {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 8%;
+  color: #fff;
+  cursor: pointer;
+}
+.logoName {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.logoName img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.logoName p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.logoName button {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.descrption h2 {
+  padding: 0 1.8rem;
+  font-size: 1rem;
+}
+.music-det {
+  position: absolute;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  bottom: 2%;
+  left: 2rem;
+}
+.music-det p {
+  font-size: 0.6rem;
+}
+.music-det img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.sound {
+  position: absolute;
+  top: 7%;
+  right: -5%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #5f5f5f4d;
+}
+.sound i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.progress {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #696868;
+  bottom: 0;
+}
+.inner {
+  width: 0%;
+  height: 100%;
+  background-color: red;
+}
