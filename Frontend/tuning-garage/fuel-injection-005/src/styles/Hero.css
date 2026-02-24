@@ -1,0 +1,208 @@
+:root {
+  --hero-primary-color: #3bb77e;
+  --hero-text-muted: rgba(0, 0, 0, 0.6);
+  --hero-radius: 20px;
+  --swiper-navigation-size: 44px;
+}
+
+/* Hero Wrapper */
+.hero-section {
+  position: relative;
+}
+
+/* Slide Container */
+.hero {
+  width: 100%;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+/* Content Layout */
+.hero__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Image */
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--hero-radius);
+  margin: 0;
+}
+
+/* Overlay Text */
+.hero__text {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  max-width: 520px;
+  z-index: 2;
+}
+
+/* Typography */
+.hero__text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4rem;
+}
+
+.hero__text p {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  font-weight: 600;
+  color: #00000094;
+}
+
+/* Email Subscription */
+.email-search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 40px;
+  position: relative;
+  font-weight: 500;
+  max-width: 420px;
+}
+
+.email-search i {
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.email-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.email-search button {
+  position: absolute;
+  background-color: var(--hero-primary-color);
+  padding: 1.5rem 2rem;
+  right: 0;
+  border-radius: 40px;
+  color: #fff;
+}
+
+/* Navigation Icons */
+.hero-navigation i {
+  color: #000000a2;
+  padding: 0.9rem;
+  background-color: aliceblue;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  position: absolute;
+  z-index: 10;
+}
+
+.hero-navigation i:hover {
+  color: white;
+  background-color: var(--hero-primary-color);
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  margin-top: 40px !important;
+}
+
+
+   /* RESPONSIVE MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  .hero__text {
+    left: 15%;
+    transform: translateY(-50%);
+  }
+  .hero__text h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .hero__text p {
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .email-search {
+    padding: 1rem 1.5rem;
+  }
+  .email-search button {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .hero__content {
+    flex-direction: column;
+  }
+
+  .hero__text {
+    position: absolute;
+    left: 15%;
+    transform: translateY(-50%);
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .hero__text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .hero__text p {
+    font-size: 1.2rem;
+  }
+
+  .email-search button {
+    right: -5%;
+  }
+
+  .hero-navigation {
+    display: none;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 425px) {
+  .hero {
+    height: 50vh;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+  .hero__text {
+    left: 10%;
+  }
+
+  .hero__text h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .hero__text p {
+    font-size: 1rem;
+  }
+
+  .email-search {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .email-search button {
+    right: -5%;
+    padding: 1rem 1.5rem;
+  }
+
+  .hero__image img {
+    margin: 0;
+    height: 50vh;
+  }
+}

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@font-face {
+  font-family: QS;
+  src: url(Quicksand.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: QS;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}

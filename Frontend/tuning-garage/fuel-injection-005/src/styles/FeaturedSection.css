@@ -1,0 +1,145 @@
+.feature-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.feature-sec-title {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 600;
+}
+.feature-sec-title h2 {
+  font-weight: 700;
+}
+.feature-sec-des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.feature-sec-des a {
+  text-decoration: none;
+  color: #000000ad;
+}
+
+.feature-sec-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 2rem;
+}
+.feature-sec-icons i {
+  background-color: #e2e2e2;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .feature-sec-des {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .feature-sec-icons {
+    padding-right: 0.5rem;
+  }
+}
+/* Section main */
+
+.feature-card-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #feefea;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.feature-card p,
+.feature-card h6 {
+  margin: 0;
+}
+.feature-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.feature-card h6 {
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.644);
+  padding-top: 0.5rem;
+}
+.feature-card p {
+  padding-top: 0.5rem;
+}
+
+/* Section 3 */
+.feature-extra-head {
+  margin-top: 2rem;
+}
+.feature-extra-main {
+  margin: 3rem 0;
+}
+#fe {
+  background-image: url(banner-1.png);
+  background-size: cover;
+  border-radius: 20px;
+}
+#fe-1 {
+  background-image: url(banner-2.png);
+  background-size: cover;
+  border-radius: 20px;
+}
+#fe-2 {
+  background-image: url(banner-3.png);
+  background-size: cover;
+  border-radius: 20px;
+}
+.feature-extra {
+  height: 100%;
+  padding: 2rem 1rem;
+}
+.feature-extra h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.feature-extra button {
+  margin-left: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .feature-extra button {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #fe-2 {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  #fe-1 {
+    margin-top: 2rem !important;
+  }
+  #fe-1 {
+    margin-top: 2rem !important;
+  }
+}
