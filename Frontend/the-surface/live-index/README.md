@@ -22,9 +22,9 @@ No project cards are hardcoded into the HTML.
 
 ## 🛠️ Tech Stack
 
-- HTML5  
-- CSS3 (Responsive Grid Layout)  
-- JavaScript (Dynamic Rendering)  
+- HTML5
+- CSS3 (Responsive Grid Layout)
+- JavaScript (Dynamic Rendering)
 - GitHub Pages (Deployment)
 
 ---
@@ -32,4 +32,4 @@ No project cards are hardcoded into the HTML.
 ## 🌐 Live Preview
 
 🔗 **Live Portfolio Hub:**  
-https://sumeet1954.github.io/Web-Development-Remastered/Frontend/the-surface/portfolio-hub/
+https://sumeet1954.github.io/Web-Development-Remastered/Frontend/the-surface/live-index/
