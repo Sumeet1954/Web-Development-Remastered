@@ -54,10 +54,14 @@ const Nav = () => {
         </div>
       </div>
 
-      <nav className={`navbar navbar-expand-lg bg-body`}>
-        <div
-          className={`container-fluid ${width <= 768 && scrolled ? "fixed transition-all duration-500 ease-in-out shadow-md bg-white top-0 pt-2 z-50" : ""}`}
-        >
+      <nav
+        className={`navbar navbar-expand-lg bg-body ${
+          scrolled
+            ? "fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all duration-500 ease-in-out"
+            : ""
+        }`}
+      >
+        <div className="container-fluid">
           <button
             className="navbar-toggler"
             type="button"
@@ -91,7 +95,7 @@ const Nav = () => {
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>

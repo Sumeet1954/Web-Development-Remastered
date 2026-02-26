@@ -1,0 +1,159 @@
+:root {
+  --hero-primary-color: #3bb77e;
+}
+
+/* Section Wrapper */
+.bottom-hero-section {
+  position: relative;
+  height: 58vh;
+  background-image: url(banner-10.png);
+}
+
+/* Slide Container */
+.bottom-hero {
+  width: 100%;
+  position: relative;
+  padding: 4rem 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Content Layout */
+.bottom-hero__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Text Block */
+.bottom-hero__text {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-00%);
+  max-width: 650px;
+  z-index: 2;
+}
+
+/* Typography */
+.bottom-hero__text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.4rem;
+}
+
+.bottom-hero__text p {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Email Subscription */
+.email-search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 40px;
+  position: relative;
+  max-width: 420px;
+}
+
+.email-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.email-search button {
+  position: absolute;
+  right: 0;
+  background-color: var(--hero-primary-color);
+  padding: 1.5rem 2rem;
+  border-radius: 40px;
+  color: #fff;
+  border: none;
+}
+
+/* Decorative Bottom Image */
+.bottom-hero__decor {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .bottom-hero__text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .bottom-hero__text p {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+  }
+
+  .email-search {
+    padding: 1rem 1.5rem;
+  }
+
+  .email-search button {
+    padding: 1rem 1.5rem;
+  }
+
+  .bottom-hero__decor {
+    width: 46%;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bottom-hero__content {
+    flex-direction: column;
+  }
+
+  .bottom-hero__text {
+    position: relative;
+    left: 0;
+    transform: none;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .bottom-hero__decor {
+    display: none;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 425px) {
+  .bottom-hero {
+    padding: 2rem 0;
+  }
+
+  .bottom-hero__text h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .bottom-hero__text p {
+    font-size: 1rem;
+  }
+
+  .email-search {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}

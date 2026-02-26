@@ -96,12 +96,17 @@
 /* Navigation Icons */
 .hero-navigation i {
   color: #000000a2;
-  padding: 0.9rem;
+  padding: 0.6rem 0.8rem;
   background-color: aliceblue;
   border-radius: 50%;
   transition: all 0.3s ease;
   position: absolute;
+  right: 0%;
+  top: 50%;
   z-index: 10;
+}
+.hero-nav--prev i {
+  transform: translate(-1400px, -1px) !important;
 }
 
 .hero-navigation i:hover {
@@ -114,8 +119,7 @@
   margin-top: 40px !important;
 }
 
-
-   /* RESPONSIVE MEDIA QUERIES */
+/* RESPONSIVE MEDIA QUERIES */
 
 @media (max-width: 1024px) {
   .hero__text {
@@ -136,6 +140,9 @@
   }
   .email-search button {
     padding: 1rem 1.5rem;
+  }
+  .hero-nav--prev i {
+    transform: translate(-990px, -1px) !important;
   }
 }
 

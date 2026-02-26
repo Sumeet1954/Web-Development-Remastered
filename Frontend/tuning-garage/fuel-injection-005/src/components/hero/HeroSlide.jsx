@@ -3,7 +3,7 @@
 import React from "react";
 import EmailSubscription from "./EmailSubscription";
 
-const HeroSlide = ({ title, description, image, variant }) => {
+const HeroSlide = ({ title, description, image, variant, bottomImg }) => {
   return (
     <div className={`hero hero--${variant}`}>
       <div className="hero__content">
@@ -21,8 +21,9 @@ const HeroSlide = ({ title, description, image, variant }) => {
         </div>
 
         <div className="hero__image">
-          <img src={image} alt="Hero banner" loading="lazy" />
+          <img src={image} alt="Hero banner" />
         </div>
+        <img src={bottomImg} alt="" className="bottom-img"></img>
       </div>
     </div>
   );

@@ -1,28 +1,29 @@
 import { useState, useEffect } from "react";
 
 const useScreenSize = () => {
-  const getSize = () => ({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  const [screenSize, setScreenSize] = useState(() => {
-    if (typeof window !== "undefined") {
-      return getSize();
-    }
-    return { width: 0, height: 0 };
+  const [screenSize, setScreenSize] = useState({
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+    height: typeof window !== "undefined" ? window.innerHeight : 0,
   });
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
     const handleResize = () => {
-      setScreenSize(getSize());
+      setScreenSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
     };
 
     window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    // Call once to ensure correct size on mount
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return screenSize;

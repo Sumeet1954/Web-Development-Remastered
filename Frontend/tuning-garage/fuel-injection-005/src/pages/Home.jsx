@@ -1,10 +1,10 @@
-import React from "react";
 import Nav from "../components/Nav";
 import Hero from "../components/hero/Hero";
-import FeaturedSection from "../components/FeaturedSection";
+import FeaturedSection from "../components/feature/FeaturedSection";
 import PopularProducts from "../components/PopularProducts";
 import DailyBestDeals from "../components/DailyBestDeals";
-
+import BottomSlider from "../components/bottomSlide/BottomBar";
+import Footer from "../components/Footer";
 const Home = () => {
   return (
     <>
@@ -13,7 +13,8 @@ const Home = () => {
       <FeaturedSection />
       <PopularProducts />
       <DailyBestDeals />
-      <Hero />
+      <BottomSlider />
+      <Footer />
     </>
   );
 };

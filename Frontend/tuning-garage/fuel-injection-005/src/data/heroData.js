@@ -1,8 +1,8 @@
 export const heroSlides = [
   {
     id: 1,
-    title: "Fresh Vegetables\nBig discount",
-    description: "Save up to 50% off on your first order",
+    title: "Fresh Vegetables\n Big discount",
+    description: "Save up to 50% off on first order",
     image: "slider-1.png",
     variant: "primary",
   },
@@ -12,5 +12,6 @@ export const heroSlides = [
     description: "Sign up for the daily newsletter",
     image: "slider-2.png",
     variant: "secondary",
+    produ: "id",
   },
 ];

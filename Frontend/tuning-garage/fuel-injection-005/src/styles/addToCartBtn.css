@@ -1,0 +1,17 @@
+.add-to-cart-button {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #29a56c;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+.add-to-cart-button i {
+  padding-right: 0.5rem;
+}
+
+.add-to-cart-button:hover {
+  background-color: #f9c041;
+}
