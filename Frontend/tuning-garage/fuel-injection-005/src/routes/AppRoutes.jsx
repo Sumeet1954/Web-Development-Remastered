@@ -1,0 +1,21 @@
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "../pages/MainLayout";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import MegaMenu from "../pages/MegaMenu";
+
+const AppRoutes = () => {
+  return (
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/mega-menu" element={<MegaMenu />} />
+      </Route>
+    </Routes>
+  );
+};
+
+export default AppRoutes;

@@ -1,0 +1,165 @@
+/* AboutMain.css */
+
+/* Main wrapper */
+.main.pages {
+  background-color: #fff;
+  color: #343a40;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page content padding */
+.page-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Section headings */
+.page-content h2,
+.page-content h1,
+.page-content h4,
+.page-content h6 {
+  color: #212529;
+}
+
+.page-content h2.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.page-content h1.heading-1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.page-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Paragraph spacing */
+.page-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #495057;
+}
+
+/* Featured cards */
+.featured-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.featured-card img {
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.featured-card h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.featured-card p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.featured-card a {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.featured-card a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Team cards */
+.team-card {
+  background: #f8f9fa;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.team-card img {
+  width: 100%;
+  display: block;
+}
+
+.team-card .content {
+  padding: 20px;
+}
+
+.team-card h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.team-card span {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.team-card .social-network a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+
+.team-card .social-network a img:hover {
+  transform: scale(1.1);
+}
+
+/* Counter Section */
+.about-count .heading-1 {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.about-count h4 {
+  font-size: 16px;
+  color: #495057;
+  font-weight: 500;
+}
+
+/* Carousels */
+.carausel-3-columns img {
+  width: 100%;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .pl-25 {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .featured-card {
+    padding: 20px;
+  }
+}

@@ -10,6 +10,11 @@
   box-sizing: border-box;
   font-family: QS;
 }
+*:focus {
+  outline: none;
+  border: none;
+}
+
 html,
 body {
   width: 100%;

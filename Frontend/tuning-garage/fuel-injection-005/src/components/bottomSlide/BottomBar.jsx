@@ -1,4 +1,3 @@
-
 import "../../styles/bottomSlider.css";
 import BottomSlide from "./BottomSlide.jsx";
 import { bottomSlides } from "../../data/bottomSlideData.js";

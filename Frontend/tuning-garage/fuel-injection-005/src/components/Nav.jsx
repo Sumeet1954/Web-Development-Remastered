@@ -1,7 +1,7 @@
 import "../styles/Nav.css";
 import useScreenSize from "../hooks/useScreenSize";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 // function
 const Nav = () => {
   const { width } = useScreenSize();
@@ -85,7 +85,7 @@ const Nav = () => {
           </div>
           <div
             className="offcanvas offcanvas-end"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
@@ -106,16 +106,14 @@ const Nav = () => {
                   <option value="apple">Apple</option>
                   <option value="banana">Banana</option>
                   <option value="orange">Orange</option>
-                  <option value="All Categories" selected>
-                    All Categories
-                  </option>
+                  <option defaultValue="All Categories">All Categories</option>
                 </select>
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Search for items..."
                 />
-                <i class="ri-search-line"></i>
+                <i className="ri-search-line"></i>
               </div>
               <div className="main-nav-part-2">
                 <div className="icon-1">
@@ -160,28 +158,29 @@ const Nav = () => {
           </div>
           <div className="col-xl-8 col-lg-9 third-nav-pt-2">
             <a href="">
-              <i class="ri-fire-line"></i>Deals
+              <i className="ri-fire-line"></i>Deals
             </a>
-            <a href="">
-              Home <i className="ri-arrow-drop-down-line"></i>
-            </a>
-            <a href="">About</a>
-            <a href="">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+
+            <Link to="/">
               Shop <i className="ri-arrow-drop-down-line"></i>
-            </a>
-            <a href="">
+            </Link>
+            <Link to="/">
               Vendors <i className="ri-arrow-drop-down-line"></i>
-            </a>
-            <a href="">
-              Mega menu <i className="ri-arrow-drop-down-line"></i>
-            </a>
-            <a href="">
+            </Link>
+
+            <Link to="/mega-menu">
+              Mega menu<i className="ri-arrow-drop-down-line"></i>
+            </Link>
+            <Link to="/">
               Blog <i className="ri-arrow-drop-down-line"></i>
-            </a>
-            <a href="">
+            </Link>
+
+            <Link to="/">
               Pages <i className="ri-arrow-drop-down-line"></i>
-            </a>
-            <a href="">Contact</a>
+            </Link>
+            <Link to="/contact">Contact</Link>
           </div>
           <div className="col-xl-2 col-lg-0 d-flex third-nav-pt-3">
             <div className="nav-side-logo">

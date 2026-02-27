@@ -1,0 +1,54 @@
+
+/* ContactTop.css */
+
+.page-header {
+  padding: 30px 0;
+  background-color: #f8f9fa; /* light grey background */
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.breadcrumb-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #6c757d; /* muted grey text */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.breadcrumb a {
+  color: #007bff; /* blue link color */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.breadcrumb i {
+  margin-right: 5px;
+}
+
+.breadcrumb span {
+  margin: 0 5px;
+  font-weight: 500;
+  color: #495057; /* slightly darker grey */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 20px 0;
+  }
+  .breadcrumb {
+    font-size: 13px;
+  }
+}
