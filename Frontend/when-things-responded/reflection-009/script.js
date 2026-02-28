@@ -19,5 +19,4 @@ setInterval(() => {
       : now.getHours() * 30 - 90 + "deg",
   );
 
-  console.log(now.getMinutes());
 }, 1000);

@@ -57,6 +57,7 @@ main {
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.8);
+  transition: all ease-in-out 0.1s;
 }
 .clock-body .clock-niddle#hour {
   width: 30%;
