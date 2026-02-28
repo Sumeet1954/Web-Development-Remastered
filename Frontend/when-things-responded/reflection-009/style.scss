@@ -1,0 +1,86 @@
+:root {
+  --hour: 0;
+  --min: 0;
+  --sec: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chartreuse;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.clock-body {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: red;
+  background-image: url(./assets/clock.png);
+  background-position: center;
+  background-size: 162% 162%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: silver;
+    z-index: 1;
+  }
+
+  .clock-niddle {
+    position: absolute;
+    transform: translate(50%, 0);
+    z-index: 1;
+    border-radius: 2px; // smooth edges
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); // subtle depth
+    background-color: rgba(255, 255, 255, 0.8);
+
+    &#hour {
+      width: 30%;
+      height: 5px;
+      rotate: var(--hour);
+      background-image: linear-gradient(135deg, #666, #ccc);
+      filter: blur(0.5px);
+    }
+
+    &#min {
+      width: 35%;
+      height: 4px;
+      rotate: var(--min);
+      background-image: linear-gradient(135deg, #888, #eee);
+      filter: blur(0.5px);
+    }
+
+    &#sec {
+      width: 40%;
+      height: 2px;
+      rotate: var(--sec);
+      background-image: linear-gradient(135deg, #ff4d4d, #ff0000);
+      filter: blur(0.5px);
+    }
+  }
+}
