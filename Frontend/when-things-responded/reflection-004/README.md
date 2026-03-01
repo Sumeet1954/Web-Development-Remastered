@@ -1,4 +1,8 @@
-# 🎨 Random Color Generator — reflection-004
+<h1>
+<a href="https://sumeet1954.github.io/Web-Development-Remastered/Frontend/when-things-responded/reflection-004/">
+🎨 Random Color Generator — reflection-004
+</a>
+</h1>
 
 A minimal **JavaScript interaction experiment** that demonstrates how a **single user action** can dynamically create new elements and alter the visual state of a webpage.
 This project is part of **_When Things Responded_**, a reflection‑driven frontend series focused on observing how **UI reacts, evolves, and grows** with each interaction.

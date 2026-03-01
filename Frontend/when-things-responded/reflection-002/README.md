@@ -1,4 +1,8 @@
-# 🔢 Counter State Logger — reflection-002
+<h1>
+<a href="https://sumeet1954.github.io/Web-Development-Remastered/Frontend/when-things-responded/reflection-002/">
+🔢 Counter State Logger — reflection-002
+</a>
+</h1>
 
 A beginner‑friendly **JavaScript interaction project** that demonstrates how **state changes** and **user actions** can be tracked and reflected in the UI in real time.
 This project is part of ***When Things Responded***, a reflection‑based learning series focused on understanding how interfaces **respond, update, and explain themselves** after user interaction.

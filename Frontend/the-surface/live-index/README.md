@@ -1,4 +1,8 @@
-# 📁 Chapter 1 — Portfolio Hub (The Surface)
+<h1>
+<a href="https://sumeet1954.github.io/Web-Development-Remastered/Frontend/the-surface/live-index/">
+📁 Chapter 1 — Portfolio Hub (The Surface)
+</a>
+</h1>
 
 This directory contains the **Live Index** for all projects completed in  
 **Chapter 1: The Surface** of the Web Development Remastered journey.

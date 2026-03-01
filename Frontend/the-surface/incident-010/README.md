@@ -1,4 +1,8 @@
-# 🌟 Incident-010 — ALVY
+<h1>
+<a href="https://sumeet1954.github.io/Web-Development-Remastered/Frontend/the-surface/incident-010/">
+🌟 Incident-010 — ALVY
+</a>
+</h1>
 
 A frontend UI project built as part of the **Web Development Remastered** series.  
 This project focuses on building a structured and responsive interface using **HTML, CSS, and SCSS**, with core styling concepts implemented and analyzed throughout the codebase.

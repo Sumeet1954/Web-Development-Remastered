@@ -1,5 +1,8 @@
-# 💎 Incident-006 — MONEY HEIST
-
+<h1>
+<a href="https://sumeet1954.github.io/Web-Development-Remastered/Frontend/the-surface/incident-006/"> 
+💎 Incident-006 — MONEY HEIST
+</a>
+</h1>
 A frontend UI project built as part of the **Web Development Remastered** series.  
 This project reinforces core frontend development skills by structuring, styling, and analyzing fundamental web concepts implemented in the code.
 
