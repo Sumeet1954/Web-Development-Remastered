@@ -22,11 +22,8 @@ const BottomSlide = ({ title, description, image, variant, bottomImg }) => {
           <p>{description}</p>
           <EmailSubscription />
         </div>
-
-        {bottomImg && (
-          <img src={bottomImg} alt="" className="bottom-hero__decor" />
-        )}
       </div>
+      <img src={bottomImg} alt="" className="bottom-hero__decor" />
     </div>
   );
 };

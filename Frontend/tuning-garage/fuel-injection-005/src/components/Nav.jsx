@@ -2,8 +2,12 @@ import "../styles/Nav.css";
 import useScreenSize from "../hooks/useScreenSize";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useGlobal } from "../context/GlobalContext";
 // function
 const Nav = () => {
+  // Global Values
+  const { cartState} = useGlobal();
+
   const { width } = useScreenSize();
 
   const [scrolled, setScrolled] = useState(false);
@@ -119,18 +123,22 @@ const Nav = () => {
                 <div className="icon-1">
                   <img src="icon-compare.svg" alt="" />
                   <a href="">Compare</a>
+                  <sub>6</sub>
                 </div>
                 <div className="icon-1">
                   <img src="icon-heart.svg" alt="" />
                   <a href="">Wishlist</a>
+                  <sub>6</sub>
                 </div>
                 <div className="icon-1">
                   <img src="icon-cart.svg" alt="" />
                   <a href="">Cart</a>
+                  <sub>{cartState}</sub>
                 </div>
                 <div className="icon-1">
                   <img src="icon-user.svg" alt="" />
                   <a href="">Account</a>
+                  <sub>6</sub>
                 </div>
               </div>
             </div>

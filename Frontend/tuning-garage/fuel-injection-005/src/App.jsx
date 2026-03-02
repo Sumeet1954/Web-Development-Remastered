@@ -1,11 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
-
+import { GlobalProvider } from "./context/GlobalContext";
 const App = () => {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <GlobalProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </GlobalProvider>
   );
 };
 
